@@ -57,6 +57,7 @@ foreach $data (split(/&/, $alldata)) {
 
   $output = "|" . $period . "|" . $classroom . "|" . $object . "|" . $user . "|" . $others . "|";
   $output =~ s/[\n\r]*//g;  # <pre>...</pre>に表示する際の改行文字削除
+  $output = &escape($output);  # <pre>...</pre>内のエスケープ
   $in{"$key"} = $output;
 
   $escaped_date = &escape($date);  # 日付情報のエスケープ
