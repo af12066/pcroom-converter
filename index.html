@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+pcroom-converter
+
+Copyright (c) 2016 T. H.
+
+This software is released under the MIT License.
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<title>臨時利用表作成ツール</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="page-header">
+                    <h1>臨時利用表作成ツール</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <p>メールで送られてきた臨時利用をコピペするのだ!</p>
+                <p>以下は入力文の例:
+                    <pre>利用日：9月9日（金）
+時　限：1～2限
+利用者：電気：ふがふが先生
+目　的：ほげほげ
+教　室：PC講義室3</pre>
+                </p>
+                <form method="post" action="form-result.cgi">
+                    <textarea class="form-control" name="message" rows="8" placeholder="ここに入力"></textarea>
+                    <br>
+                    <input class="btn btn-primary btn-lg" type="submit" value="作 成">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
